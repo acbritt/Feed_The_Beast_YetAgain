@@ -1,0 +1,66 @@
+{
+    "name": "touchControls",
+    "maps": [
+        {
+            "name": "Touch",
+            "id": "168a1948-6a90-4946-be00-81b347346040",
+            "actions": [
+                {
+                    "name": "tapInput",
+                    "type": "PassThrough",
+                    "id": "2c7bbe13-a9a1-4ec8-8c3a-58f96cb47957",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Tap Position",
+                    "type": "PassThrough",
+                    "id": "18d2d434-e67a-4b3c-a17e-a56656b5d344",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "07cfe3c5-1112-4938-bdc6-299b0a02868f",
+                    "path": "<Touchscreen>/touch0/press",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "tapInput",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "419aca24-2e85-430e-ac40-a6549feebe7f",
+                    "path": "<Touchscreen>/primaryTouch/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Tap Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Touch",
+            "bindingGroup": "Touch",
+            "devices": [
+                {
+                    "devicePath": "<Touchscreen>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
