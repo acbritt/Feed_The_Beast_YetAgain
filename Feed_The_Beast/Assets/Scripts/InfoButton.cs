@@ -5,10 +5,15 @@ using UnityEngine.UI;
 
 public class InfoButton : MonoBehaviour
 {
-    public Text TextField;
+    public GameObject Popup;
 
-    public void SetText (string text)
+    public void Start()
     {
-        TextField.text = text;
+        Popup.SetActive(false);
+    }
+
+    public void OpenPopup ()
+    {
+        Popup.SetActive(true);
     }
 }
