@@ -2333,9 +2333,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1273163174}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a578c223b12888b468264e82e9d07dd7, type: 3}
+  m_Script: {fileID: 11500000, guid: 2348fe39c9ead5f4ca2adbfa1810555a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Shop: {fileID: 159473335}
 --- !u!114 &1273163177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2381,9 +2382,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1273163176}
-        m_TargetAssemblyTypeName: SceneSwitch, Assembly-CSharp
-        m_MethodName: MoveToScene
-        m_Mode: 3
+        m_TargetAssemblyTypeName: ShowShop, Assembly-CSharp
+        m_MethodName: Start
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
