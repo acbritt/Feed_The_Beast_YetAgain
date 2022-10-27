@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Wander : MonoBehaviour
+public class WanderAI : MonoBehaviour
 {
     public float moveSpeed = 3f;
     public float rotSPeed = 100f;
