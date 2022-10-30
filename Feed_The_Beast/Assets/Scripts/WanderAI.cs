@@ -39,9 +39,9 @@ void Start()
     IEnumerator Wander()
     {
         int rotTime = Random.Range(1, 3);
-        int rotateWait = Random.Range(3, 4);
-        int rotateLorR = Random.Range(1, 2);
-        int walkWait = Random.Range(1, 4);
+        int rotateWait = Random.Range(1, 3);
+        int rotateLorR = Random.Range(0, 3);
+        int walkWait = Random.Range(1, 3);
         int walkTime = Random.Range(1, 5);
 
         isWandring = true;
