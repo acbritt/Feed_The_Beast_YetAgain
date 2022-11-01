@@ -17,7 +17,7 @@ public class ShowShop : MonoBehaviour
 
     public void DisplayShop()
     {
-        Progressbar.SetActive(false );
+       // Progressbar.SetActive(false );
         Shopbutton.SetActive(false );
         Shop.SetActive(true);
     }
