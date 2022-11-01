@@ -3394,6 +3394,8 @@ MonoBehaviour:
   - {fileID: 6919647372885122435, guid: 5ad3b0e4949c6cf42ae30e33b49ef60f, type: 3}
   - {fileID: 2710402666504483175, guid: 0040ee5e65e14c84c97b1c93eece8449, type: 3}
   isSwapping: 0
+  ID: {fileID: -8146003989218374897, guid: 0040ee5e65e14c84c97b1c93eece8449, type: 3}
+  GemCount: 0
 --- !u!4 &1467433873
 Transform:
   m_ObjectHideFlags: 0

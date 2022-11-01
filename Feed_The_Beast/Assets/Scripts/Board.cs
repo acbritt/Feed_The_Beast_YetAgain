@@ -23,8 +23,8 @@ public class Board : MonoBehaviour
     itemSelect item1,item2; //for storing actual items
     Vector3 item1StartPos, item1EndPos, item2StartPos, item2EndPos;
 
-   
-
+    public itemSelect ID;
+    public int GemCount;
    
     void Start()
     {
@@ -143,6 +143,14 @@ public class Board : MonoBehaviour
 
 
         //has been a match
+
+        if(ID.itemID == 5)
+        {
+            GemCount++;
+            item1.ClearAllMatches();
+            item2.ClearAllMatches();
+        }
+
         item1.ClearAllMatches();
         item2.ClearAllMatches();
 

@@ -24,7 +24,7 @@ public class itemSelect : MonoBehaviour
 
     private void Start()
     {
-        
+        GetComponent<Board>();
 
         toggleSelector();
 
