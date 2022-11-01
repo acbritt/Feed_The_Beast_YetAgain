@@ -42,7 +42,7 @@ void Start()
         int rotateWait = Random.Range(1, 3);
         int rotateLorR = Random.Range(0, 3);
         int walkWait = Random.Range(1, 3);
-        int walkTime = Random.Range(1, 5);
+        int walkTime = Random.Range(1, 1);
 
         isWandring = true;
 
