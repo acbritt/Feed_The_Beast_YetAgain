@@ -1767,13 +1767,25 @@ MonoBehaviour:
   stage1: 0
   stage2: 0
   stage3: 0
+  stage4: 0
+  stage5: 0
+  stage6: 0
   Stage1: {fileID: 2651842549425287392, guid: 9669a31e37e86a24c90ab296f4fd8280, type: 3}
   Stage2: {fileID: 5498567912514090382, guid: e1214b2d046f77c4bafb94ce6b9c75de, type: 3}
   Stage3: {fileID: 2948764349614631325, guid: 99a5f8e3b1e80014f879d6ce07ec5e82, type: 3}
+  Stage4: {fileID: 1709579359085416914, guid: 4b9e662ab280b9b4e98b0c90629da44c, type: 3}
+  Stage5: {fileID: 511278844046689793, guid: db9a071f3e2600347ab6bd41247cb11b, type: 3}
+  Stage6: {fileID: 7818661780409604206, guid: 619a0f9ae6a28434fae884d0eb01f450, type: 3}
   P_Bar_Stage2: 0
   P_Bar_Stage3: 0
-  MStage2TargetScore: 16
-  MStage3TargetScore: 20
+  P_Bar_Stage4: 0
+  P_Bar_Stage5: 0
+  P_Bar_Stage6: 0
+  MStage2TargetScore: 10
+  MStage3TargetScore: 15
+  MStage4TargetScore: 20
+  MStage5TargetScore: 25
+  MStage6TargetScore: 30
 --- !u!4 &629037084
 Transform:
   m_ObjectHideFlags: 0
@@ -3206,7 +3218,7 @@ PrefabInstance:
     - target: {fileID: 8300935672616986262, guid: 922b6e36b6dafa04493cdfd84a26bd49,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8300935672616986262, guid: 922b6e36b6dafa04493cdfd84a26bd49,
         type: 3}
@@ -3627,8 +3639,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af41788c5c4bfe946b3d404841032e01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resetToZero: 0
-  maximum: 16
+  stage1: 0
+  stage2: 0
+  stage3: 0
+  stage4: 0
+  stage5: 0
+  stage6: 0
+  maximum: 10
   current: 0
   mask: {fileID: 280098698}
   Board: {fileID: 1467433872}
@@ -4114,7 +4131,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1705867530
 GameObject:

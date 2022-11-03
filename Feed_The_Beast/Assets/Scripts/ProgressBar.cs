@@ -8,7 +8,12 @@ using UnityEngine.UI;
 public class ProgressBar : MonoBehaviour
 {
 
-    public bool resetToZero;
+    public bool stage1;
+    public bool stage2;
+    public bool stage3;
+    public bool stage4;
+    public bool stage5;
+    public bool stage6;
 
 
     public int maximum;
@@ -24,7 +29,7 @@ public class ProgressBar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        resetToZero = false;
+        stage1 = false;
 
         current = 0;
 
@@ -43,7 +48,7 @@ public class ProgressBar : MonoBehaviour
 
  //     changes the max value of the progress bar to match the
  //     target score for the next stage:       
-        if(monster.P_Bar_Stage2 == true  && resetToZero == false)
+        if(monster.P_Bar_Stage2 == true  && stage1 == false)
         {
             //resets bar so the points don't carry over
             Board.MatchScore = 0;
@@ -52,10 +57,36 @@ public class ProgressBar : MonoBehaviour
 
  //         breaks the update loop so it doesn't 
  //         infinitely reset bar to 0
-            resetToZero = true;
+            stage1 = true;
            
         }
-       
+
+        if (monster.P_Bar_Stage3 == true && stage2 == false)
+        {
+            Board.MatchScore = 0;
+            maximum = monster.MStage4TargetScore;
+            stage2 = true;
+
+        }
+
+        if (monster.P_Bar_Stage4 == true && stage3 == false)
+        {
+            Board.MatchScore = 0;
+            maximum = monster.MStage5TargetScore;
+            stage3 = true;
+
+        }
+
+        if (monster.P_Bar_Stage5 == true && stage4 == false)
+        {
+            Board.MatchScore = 0;
+            maximum = monster.MStage6TargetScore;
+            stage4 = true;
+
+        }
+
+     
+
     }
 
 
