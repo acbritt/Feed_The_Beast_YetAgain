@@ -1,6 +1,10 @@
 sceneSetups:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - path: Assets/Scenes/Alex_Scene.unity
+=======
+- path: Assets/Scenes/Marcus's Scene.unity
+>>>>>>> Stashed changes
 =======
 - path: Assets/Scenes/Marcus's Scene.unity
 >>>>>>> Stashed changes
