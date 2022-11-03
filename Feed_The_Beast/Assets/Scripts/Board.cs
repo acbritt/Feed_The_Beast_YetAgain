@@ -93,11 +93,13 @@ public class Board : MonoBehaviour
     {
         if(lastItem == null)
         {
-            lastItem = currentItem;
+            lastItem = currentItem;       
+
         }
         else if(lastItem == currentItem)
         {
             lastItem = null;
+           
         }
         else 
         {
@@ -114,6 +116,8 @@ public class Board : MonoBehaviour
 
                 //start swapping mechanic
                 StartCoroutine(SwapItems());
+
+
             }
             else
             { // no swap
@@ -144,15 +148,12 @@ public class Board : MonoBehaviour
 
         //has been a match
 
-        if(ID.itemID == 5)
-        {
-            GemCount++;
-            item1.ClearAllMatches();
-            item2.ClearAllMatches();
-        }
+      
 
         item1.ClearAllMatches();
         item2.ClearAllMatches();
+
+       
 
         while (!turnChecked) { yield return null; }
         if(!item1.matchFound  &&  !item2.matchFound)
@@ -182,6 +183,13 @@ public class Board : MonoBehaviour
 
     public void CreateNewItem(itemSelect b, Vector3 pos)
     {
+        //increases gem count based on how many gems are in the list
+        if(b.itemID == 5)
+        {
+            GemCount++;
+        }
+
+
         allItemsList.Remove(b);
         //create a new one
 
