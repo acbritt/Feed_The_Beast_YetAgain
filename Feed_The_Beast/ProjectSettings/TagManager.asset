@@ -15,6 +15,7 @@ TagManager:
   - topCollider3
   - topCollider4
   - topCollider5
+  - MonsterCollision
   layers:
   - Default
   - TransparentFX
