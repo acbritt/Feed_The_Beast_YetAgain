@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class MonsterSpawn : MonoBehaviour
 {
-
+    public bool toggleTap;
     public Board score;
+
+    public int taps;
+
+    public TapEvolve tap;
+    public GameObject t;
 
     public bool stage1;
     public bool stage2;
@@ -34,6 +39,8 @@ public class MonsterSpawn : MonoBehaviour
     public int MStage5TargetScore;
     public int MStage6TargetScore;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,22 +57,41 @@ public class MonsterSpawn : MonoBehaviour
 
         Stage1 = Instantiate(Stage1, new Vector3(1.5f, 3.4f, 1.15f), Quaternion.identity);
 
+
+        toggleTap = false;
+
     }
+
+    
 
     // Update is called once per frame
     void Update()
     {
-        if (score.MatchScore >= MStage2TargetScore && stage1 == true)
+
+        taps = tap.tapCount;
+
+        if (score.MatchScore >= MStage2TargetScore && stage1 == true )
         {
-            Destroy(Stage1);
 
-            Stage2 = Instantiate(Stage2, new Vector3(1.5f, 3.4f, 1.15f), Quaternion.identity);
+            toggleTap = true;
 
-            stage1 = false;
+            //UI text setActive function for the "tap me" pop-up?
 
-            P_Bar_Stage2 = true;
 
-           
+            if(tap.tapCount >= 15)
+            {
+                Debug.Log("next stage");
+
+                Destroy(Stage1);
+
+                Stage2 = Instantiate(Stage2, new Vector3(1.5f, 3.4f, 1.15f), Quaternion.identity);
+
+                tap.tapCount = 0;
+
+                stage1 = false;
+
+                P_Bar_Stage2 = true;
+            }
 
         }
 
