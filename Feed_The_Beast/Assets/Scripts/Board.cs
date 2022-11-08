@@ -25,7 +25,15 @@ public class Board : MonoBehaviour
 
     public itemSelect ID;
     public int GemCount;
-   
+
+
+    //Matching Sound Effect
+    public AudioClip matchSound;
+    public AudioSource audioSource;
+
+    //Gem Sound Effect
+    public AudioSource gemSound;
+
     void Start()
     {
         FillBoard();
@@ -93,7 +101,9 @@ public class Board : MonoBehaviour
     {
         if(lastItem == null)
         {
-            lastItem = currentItem;       
+            lastItem = currentItem;
+
+            
 
         }
         else if(lastItem == currentItem)
@@ -134,6 +144,7 @@ public class Board : MonoBehaviour
     {
         if (isSwapping)
         {
+
             yield break;
         }
 
@@ -153,7 +164,7 @@ public class Board : MonoBehaviour
         item1.ClearAllMatches();
         item2.ClearAllMatches();
 
-       
+        
 
         while (!turnChecked) { yield return null; }
         if(!item1.matchFound  &&  !item2.matchFound)
@@ -187,6 +198,7 @@ public class Board : MonoBehaviour
         if(b.itemID == 5)
         {
             GemCount++;
+            gemSound.Play();
         }
 
 
@@ -200,7 +212,8 @@ public class Board : MonoBehaviour
 
         //Adds to score system
         MatchScore++;
-        
+
+        audioSource.Play();
 
         newItem.transform.parent = transform;
 
@@ -242,9 +255,12 @@ public class Board : MonoBehaviour
         {
             if (!isSwapping  &&  !CheckIfItemMoving())
             {
+                
                 for (int i = 0; i < allItemsList.Count; i++)
                 {
                     allItemsList[i].ClearAllMatches();
+
+                    
                 }
             }
 
