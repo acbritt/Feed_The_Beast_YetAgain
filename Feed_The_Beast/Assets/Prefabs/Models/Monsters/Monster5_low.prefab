@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 2925258264635383946}
   - component: {fileID: 8128435230771026303}
   - component: {fileID: 166993878327483735}
+  - component: {fileID: 7213662332565135678}
   m_Layer: 0
   m_Name: Stage5_Eye_low
   m_TagString: Untagged
@@ -162,6 +163,25 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &7213662332565135678
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824392402000733224}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 59e1fbfdbb447d34daeec998feaa5b46, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &976755296791509292
 GameObject:
   m_ObjectHideFlags: 0

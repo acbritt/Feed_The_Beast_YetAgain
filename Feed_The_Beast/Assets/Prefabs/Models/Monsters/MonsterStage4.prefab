@@ -239,6 +239,7 @@ GameObject:
   - component: {fileID: 208849778908095203}
   - component: {fileID: 976191350008208658}
   - component: {fileID: 8582372481327819062}
+  - component: {fileID: 5143525875189134697}
   m_Layer: 0
   m_Name: Eyeball2_low
   m_TagString: Untagged
@@ -254,7 +255,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1791538038989200196}
   m_LocalRotation: {x: -0.02369943, y: -0.72375774, z: 0.68932635, w: -0.02103003}
-  m_LocalPosition: {x: 0.00028696368, y: 0.014537481, z: 0.00026404706}
+  m_LocalPosition: {x: 0.00051, y: 0.01454, z: 0.00028}
   m_LocalScale: {x: 0.41806835, y: 0.41806835, z: 0.41806832}
   m_Children: []
   m_Father: {fileID: 6171533051383407910}
@@ -309,6 +310,25 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &5143525875189134697
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791538038989200196}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1dfa397aefa04834bb4e2fc049a97659, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8335433920595042601
 GameObject:
   m_ObjectHideFlags: 0
