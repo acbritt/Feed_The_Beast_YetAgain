@@ -11,15 +11,18 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Davis_Shop.unity
     guid: a8ec70f5ad264694ba62bdb5c3519838
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Davis_MenuTest.unity
     guid: d99fa7e1c81b94f4da31f39491505164
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Davis_MatchingArea.unity
     guid: 28116d99176cac34b80e8eacc7cfd5ec
+  - enabled: 1
+    path: Assets/Scenes/mainScene.unity
+    guid: 10f25c8d3680d344fa75713173667439
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: a42d7e53902d1094dbe42fe495e9d50f,
       type: 2}

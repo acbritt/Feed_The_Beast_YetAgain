@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -150,7 +150,7 @@ RectTransform:
   m_GameObject: {fileID: 11537264}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.5001159, y: 2.5001159, z: 2.5001159}
   m_Children:
   - {fileID: 613820775}
   m_Father: {fileID: 770783003}
@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 28, y: 32.3}
+  m_AnchoredPosition: {x: 4, y: 101}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &11537266
@@ -2251,7 +2251,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.17608452, y: 3.8459473}
+  m_AnchoredPosition: {x: 0.144, y: 3.8459473}
   m_SizeDelta: {x: 1000, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &685860816
@@ -2543,7 +2543,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f4ca818d5a570c42890b7be2aa46ad5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 2020074595}
 --- !u!1 &783939750
 GameObject:
   m_ObjectHideFlags: 0
@@ -4240,7 +4239,7 @@ MonoBehaviour:
   stage4: 0
   stage5: 0
   stage6: 0
-  maximum: 5
+  maximum: 20
   current: 0
   mask: {fileID: 280098698}
   Board: {fileID: 1467433872}
@@ -4790,7 +4789,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1600733819}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 53.000015}
+  m_LocalPosition: {x: 0, y: 0, z: 53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 488492704}
@@ -4799,7 +4798,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2, y: 317}
+  m_AnchoredPosition: {x: -363, y: 1069}
   m_SizeDelta: {x: 221.87, y: 51.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1600733821
@@ -5206,7 +5205,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 324, y: 723}
+  m_AnchoredPosition: {x: 347, y: 940}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1725634756
@@ -5853,8 +5852,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2010788065}
   m_LocalRotation: {x: -0.12845212, y: 0, z: -0, w: 0.9917158}
-  m_LocalPosition: {x: -37, y: 72, z: 1918}
-  m_LocalScale: {x: 200, y: 215.97371, z: 215.97371}
+  m_LocalPosition: {x: -37, y: 258, z: 1869}
+  m_LocalScale: {x: 286.41602, y: 309.2916, z: 309.2916}
   m_Children:
   - {fileID: 280098697}
   - {fileID: 685860815}
@@ -6131,5 +6130,30 @@ PrefabInstance:
       propertyPath: score
       value: 
       objectReference: {fileID: 1467433872}
+    - target: {fileID: 6463238679257847725, guid: 6703844712c77534baa52db16feb202b,
+        type: 3}
+      propertyPath: MStage2TargetScore
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6463238679257847725, guid: 6703844712c77534baa52db16feb202b,
+        type: 3}
+      propertyPath: MStage3TargetScore
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6463238679257847725, guid: 6703844712c77534baa52db16feb202b,
+        type: 3}
+      propertyPath: MStage4TargetScore
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 6463238679257847725, guid: 6703844712c77534baa52db16feb202b,
+        type: 3}
+      propertyPath: MStage5TargetScore
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6463238679257847725, guid: 6703844712c77534baa52db16feb202b,
+        type: 3}
+      propertyPath: MStage6TargetScore
+      value: 60
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6703844712c77534baa52db16feb202b, type: 3}

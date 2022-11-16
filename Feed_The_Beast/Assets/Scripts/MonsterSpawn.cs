@@ -73,26 +73,28 @@ public class MonsterSpawn : MonoBehaviour
         if (score.MatchScore >= MStage2TargetScore && stage1 == true )
         {
 
-            toggleTap = true;
+            // toggleTap = true;
 
             //UI text setActive function for the "tap me" pop-up?
 
 
-            if(tap.tapCount >= 15)
-            {
-                Debug.Log("next stage");
+            Debug.Log("next stage");
 
-                Destroy(Stage1);
+            Destroy(Stage1);
 
-                Stage2 = Instantiate(Stage2, new Vector3(1.5f, 3.4f, 1.15f), Quaternion.identity);
+            Stage2 = Instantiate(Stage2, new Vector3(1.5f, 3.4f, 1.15f), Quaternion.identity);
 
-                tap.tapCount = 0;
+            tap.tapCount = 0;
 
-                stage1 = false;
+            stage1 = false;
 
-                P_Bar_Stage2 = true;
-            }
+            P_Bar_Stage2 = true;
 
+            /* if(tap.tapCount >= 15)
+             {
+
+             }
+             */
         }
 
 
