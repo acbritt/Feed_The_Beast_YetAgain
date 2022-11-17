@@ -39,6 +39,7 @@ public class MonsterSpawn : MonoBehaviour
     public int MStage5TargetScore;
     public int MStage6TargetScore;
 
+    [SerializeField] FlashImage _flashImage = null;
     
 
     // Start is called before the first frame update
@@ -67,6 +68,13 @@ public class MonsterSpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Just for testing
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            _flashImage.StartFlash(.25f, .5f, Color.white);
+        }
+
 
         taps = tap.tapCount;
 
@@ -79,6 +87,8 @@ public class MonsterSpawn : MonoBehaviour
 
 
             Debug.Log("next stage");
+
+            _flashImage.StartFlash(.25f, 1f, Color.white);
 
             Destroy(Stage1);
 
