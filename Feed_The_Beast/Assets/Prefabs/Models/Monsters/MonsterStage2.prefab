@@ -736,6 +736,7 @@ GameObject:
   - component: {fileID: 8563039721020708687}
   - component: {fileID: 7725440117501780166}
   - component: {fileID: 1137941172621316978}
+  - component: {fileID: 3587826600174843582}
   m_Layer: 0
   m_Name: MonsterStage2
   m_TagString: Untagged
@@ -796,12 +797,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5498567912514090382}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7821fe0be086d1c41885471e2ef00a74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   shakeAmt: 0
+--- !u!114 &3587826600174843582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5498567912514090382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d427775c272df064085315cc43ea6183, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 6
+  rotSPeed: 100
 --- !u!1 &5638831132056583569
 GameObject:
   m_ObjectHideFlags: 0

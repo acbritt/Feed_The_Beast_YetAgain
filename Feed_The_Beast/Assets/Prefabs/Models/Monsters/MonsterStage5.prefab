@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3013449909182947912}
   - component: {fileID: 7168087635129417527}
   - component: {fileID: 1811067758696662986}
+  - component: {fileID: 8640081892916574314}
   m_Layer: 0
   m_Name: MonsterStage5
   m_TagString: Untagged
@@ -64,6 +65,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8640081892916574314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511278844046689793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d427775c272df064085315cc43ea6183, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 3
+  rotSPeed: 100
 --- !u!1 &2652126685257204081
 GameObject:
   m_ObjectHideFlags: 0
