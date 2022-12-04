@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 518282358243072087}
   - component: {fileID: 2012500032778173528}
   - component: {fileID: -805724619651937645}
+  - component: {fileID: 6285561266564105759}
   m_Layer: 0
   m_Name: Egg_model
   m_TagString: Untagged
@@ -130,6 +131,25 @@ MonoBehaviour:
   tapCount: 0
   M: {fileID: 6463238679257847724, guid: 6703844712c77534baa52db16feb202b, type: 3}
   toggle: {fileID: 6463238679257847725, guid: 6703844712c77534baa52db16feb202b, type: 3}
+--- !u!95 &6285561266564105759
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2651842549425287392}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c64d580544c715d4f9bdf19ac5e75c87, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5546324272193271373
 GameObject:
   m_ObjectHideFlags: 0
