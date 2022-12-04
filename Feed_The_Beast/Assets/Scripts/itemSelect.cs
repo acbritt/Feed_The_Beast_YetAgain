@@ -38,11 +38,11 @@ public class itemSelect : MonoBehaviour
     private void OnMouseDown()
     {
 
-        if(Board.instance.CheckIfItemMoving())
-        {
+       // if(Board.instance.CheckIfItemMoving())
+      //  {
             //if the board is not changing, then continue the function
-            return;
-        }
+       //     return;
+       // }
         Debug.Log("Clicked");
         getAllNeighbors();
         
@@ -139,7 +139,7 @@ public class itemSelect : MonoBehaviour
         for (int i = 0; i < checkList.Count; i++)
         {
             itemSelect b = checkList[i].GetNeighbor(checkDir, itemID);
-            if(b != null && itemID == b.itemID)
+            if (b != null && itemID == b.itemID)
             {
                 checkList.Add(b);
             }
@@ -227,7 +227,7 @@ public class itemSelect : MonoBehaviour
                 yield break;
 
             }
-            yield return new WaitForSeconds(0.25f);
+            yield return new WaitForSeconds(.25f);
         }
     }
 
@@ -245,6 +245,74 @@ public class itemSelect : MonoBehaviour
         }
         return false;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //--- Check that there are possible matches on the board ---//
+
+      /*
+     
+
+      public bool CheckForExistingMatches()
+      {
+          if(CheckMatch(new Vector3[2] { Vector3.left, Vector3.right }) || CheckMatch(new Vector3[2] { Vector3.up, Vector3.down }))
+          {
+              return true;
+          }
+
+          return false;
+
+      }
+
+
+      bool CheckMatch(Vector3[] dirs)
+      {
+          List<itemSelect> matchingItems = new List<itemSelect>();
+          List<itemSelect> sortedList = new List<itemSelect>();
+
+          for (int i = 0; i < dirs.Length; i++)
+          {
+              matchingItems.AddRange(FindMatch(dirs[i]));
+
+          }
+
+          //erase all doubles
+          for (int i = 0; i < matchingItems.Count; i++)
+          {
+              if (!sortedList.Contains(matchingItems[i]))
+              {
+                  sortedList.Add(matchingItems[i]);
+              }
+
+          }
+
+
+          //check for more than 3 items
+          if (sortedList.Count >= 3)
+          {
+              return true;
+          }
+          return false;
+
+      }
+
+      
+
+    */
+    
 
 
 

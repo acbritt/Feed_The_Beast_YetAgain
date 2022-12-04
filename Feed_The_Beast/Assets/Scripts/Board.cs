@@ -237,15 +237,17 @@ public class Board : MonoBehaviour
                 return true;
             }
 
-            if(allItemsList[i].GetComponent<Rigidbody>().velocity.y > 0.02f)
+             if(allItemsList[i].GetComponent<Rigidbody>().velocity.y > 0.02f)
+            //if (!allItemsList[i].GetComponent<Rigidbody>().IsSleeping())
             {
                 return true;
             }
-  
+
         }
         return false;
 
     }
+
 
     IEnumerator BoardCheck()
     {
@@ -259,9 +261,22 @@ public class Board : MonoBehaviour
                 for (int i = 0; i < allItemsList.Count; i++)
                 {
                     allItemsList[i].ClearAllMatches();
-
-                    
+ 
                 }
+
+
+                /*
+                 if(!CheckForPossibleMatch())
+                 {
+                     print("NO MATCHES LEFT");
+                     for (int i = 0; i < allItemsList.Count; i++)
+                     {
+                         allItemsList[i].matchFound = true;
+                    }
+
+                 }
+                 */
+
             }
 
             yield return new WaitForSeconds(0.25f);
@@ -289,9 +304,20 @@ public class Board : MonoBehaviour
 
 
 
+
+
+
+
+
+
+
+
+
+
     //--- Check that there are possible matches on the board ---//
 
-        /*
+     /*
+        
     bool CheckForPossibleMatch()
     {
         TogglePhysics(true);
@@ -310,10 +336,51 @@ public class Board : MonoBehaviour
                     //Swap location
                     Vector3 b1TempPos = b1.transform.position;
                     Vector3 b2TempPos = b2.transform.position;
+                    b1.transform.position = b2TempPos;
+                    b2.transform.position = b1TempPos;
 
+                    //swap neighbors
+                    b1.neighborList = b2.neighborList;
+                    b2.neighborList = tempNeighbours;
+
+                    //check for matches 
+                    if(b1.CheckForExistingMatches())
+                    {
+                        b1.transform.position = b1TempPos;
+                        b2.transform.position = b2TempPos;
+
+                        b2.neighborList = b1.neighborList;
+                        b1.neighborList = b2.neighborList;
+
+                        TogglePhysics(false);
+                        return true;
+                    }
+
+                    if (b2.CheckForExistingMatches())
+                    {
+                        b1.transform.position = b1TempPos;
+                        b2.transform.position = b2TempPos;
+
+                        b2.neighborList = b1.neighborList;
+                        b1.neighborList = b2.neighborList;
+
+                        TogglePhysics(false);
+                        return true;
+                    }
+
+                    b1.transform.position = b1TempPos;
+                    b2.transform.position = b2TempPos;
+
+                    b2.neighborList = b1.neighborList;
+                    b1.neighborList = b2.neighborList;
+
+                    TogglePhysics(false);
                 }
             }
         }
+        return false;
     }
+    
     */
+
 }
