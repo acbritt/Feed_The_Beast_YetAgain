@@ -111,6 +111,8 @@ public class MonsterSpawn : MonoBehaviour
 
         if (score.MatchScore >= MStage3TargetScore && stage2 == false)
         {
+            _flashImage.StartFlash(.25f, 1f, Color.white);
+
             Destroy(Stage2);
 
             Stage2 = Instantiate(Stage3, new Vector3(1.5f, 3.4f, 1.15f), Quaternion.identity);
@@ -125,6 +127,8 @@ public class MonsterSpawn : MonoBehaviour
 
         if (score.MatchScore >= MStage4TargetScore && stage3 == false)
         {
+            _flashImage.StartFlash(.25f, 1f, Color.white);
+
             Destroy(Stage2);
 
             Stage3 = Instantiate(Stage4, new Vector3(1.5f, 3.4f, 1.40f), Quaternion.identity);
@@ -139,6 +143,8 @@ public class MonsterSpawn : MonoBehaviour
 
         if (score.MatchScore >= MStage5TargetScore && stage4 == false)
         {
+            _flashImage.StartFlash(.25f, 1f, Color.white);
+
             Destroy(Stage3);
 
             Stage4 = Instantiate(Stage5, new Vector3(1.5f, 3.4f, 1.90f), Quaternion.identity);
@@ -153,6 +159,8 @@ public class MonsterSpawn : MonoBehaviour
 
         if (score.MatchScore >= MStage6TargetScore && stage5 == false)
         {
+            _flashImage.StartFlash(.25f, 1f, Color.white);
+
             Destroy(Stage4);
 
             Stage5 = Instantiate(Stage6, new Vector3(1.5f, 3.4f, 2.32f), Quaternion.identity);
